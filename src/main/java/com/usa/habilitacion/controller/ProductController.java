@@ -56,7 +56,7 @@ public class ProductController {
     public boolean delete(@PathVariable("reference") String reference){
         return productService.delete(reference);
     }
-    @GetMapping("/descripcion/{descripcion}")
+    @GetMapping("/description/{descripcion}")
     public List<Product> findByDescriptionContainingIgnoreCase(@PathVariable("description") String description){
         return productService.findByDescriptionContainingIgnoreCase(description);
     }
